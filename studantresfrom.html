@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Information Form</title>
+</head>
+<style>
+    label{
+        color: cadetblue;
+    }
+    input[type="text"]{
+        color: coral;
+        text-transform: capitalize;
+        border-color: chocolate;
+    }
+    #formHeading:hover{
+        color: cadetblue;
+    }
+    input[type="submit"]:hover{
+        color: cadetblue;
+    }
+</style>
+<body>
+    <h1 id="formHeading">Contact Information</h1>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        <label for="birthdate">Birth Date:</label>
+        <input type="date" id="birthdate" name="birthdate" required><br><br>
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+            <br><br>
+        </div>
+    </form>
+</body>
+</html>
+

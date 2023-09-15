@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Information Form</title>
+  <style>
+    h2:hover{
+        color: rgb(242, 36, 4);
+    }
+    .emp{
+        background-color: #e8dd14;
+    }
+  </style>
+</head>
+<body class="emp">
+  <h2 >Employee Information Form</h2>
+  <form action="#" method="post" enctype="multipart/form-data">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required><br><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required><br><br>
+
+    <label for="mobileNumber">Mobile Number:</label>
+    <input type="tel" id="mobileNumber" name="mobileNumber" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="gender">Select Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+
+    <label for="techStack">Select Your Tech Stack:</label>
+    <input type="checkbox" id="htmlCss" name="techStack" value="HTML/CSS">HTML/CSS
+    <input type="checkbox" id="reactJs" name="techStack" value="React JavaScript">React JavaScript
+    <input type="checkbox" id="javascript" name="techStack" value="JavaScript">JavaScript
+    <input type="checkbox" id="github" name="techStack" value="GitHub">GitHub<br><br>
+    
+
+    <label for="marksheet">Upload Marksheet:</label>
+    <input type="file" id="marksheet" name="marksheet" accept=".pdf, .doc, .docx" required><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="state">Select State:</label>
+    <select id="state" name="state" required>
+        <option value="Maharastra">Maharastra</option>
+        <option value="karnattka">Karnatka</option>
+        <option value="andra pradesh">andra pradesh</option>
+        <option value="keral">keral</option>
+    </select><br><br>
+
+    <label for="country">Select Country:</label>
+    <select id="country" name="country" required>
+        <option value="India">India</option>
+        <option value="UK">UK</option>
+        <option value="Singapur">Singapur</option>
+        <option value="shree lanka">shree lanka</option>
+    </select><br><br>
+
+    <label for="address">Permanent Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>
